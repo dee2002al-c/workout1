@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>30 Day Beginner Workout</title>
+<meta name="description" content="A gentle, 30 day beginner workout plan for easing back into movement.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ===================== HOME VIEW ===================== -->
+  <section id="view-home" class="view">
+    <div class="home-wrap">
+      <p class="home-kicker">A slow, steady way back to moving</p>
+      <h1 class="home-title">30 Day<br>Beginner Workout</h1>
+      <p class="home-copy">
+        It's been a while, and that's alright. This plan starts small on purpose &mdash;
+        a few gentle minutes a day, plenty of rest, and just enough challenge to keep
+        you coming back tomorrow. No pressure, no rushing. Just thirty days of
+        showing up for yourself.
+      </p>
+      <a href="#/program" class="btn btn-primary" id="home-cta">Start your journey</a>
+      <p class="home-note" id="home-progress-note"></p>
+    </div>
+  </section>
+
+  <!-- ===================== PROGRAM VIEW ===================== -->
+  <section id="view-program" class="view">
+    <header class="page-header">
+      <a href="#/" class="back-link">&lsaquo; Home</a>
+      <h2 class="page-title">Your 30 days</h2>
+      <div class="progress-block">
+        <div class="progress-row">
+          <span id="progress-count">0 / 30 days completed</span>
+          <span id="progress-percent">0%</span>
+        </div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+      </div>
+    </header>
+    <div class="day-grid" id="day-grid"></div>
+  </section>
+
+  <!-- ===================== DAY DETAIL VIEW ===================== -->
+  <section id="view-day" class="view">
+    <header class="page-header">
+      <a href="#/program" class="back-link">&lsaquo; Program</a>
+    </header>
+    <div id="day-detail-content"></div>
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
